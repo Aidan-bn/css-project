@@ -88,7 +88,6 @@ button {
 /* end of hero section */
 .information {
     padding: 20px 250px;
-    border: 2px solid #000;
 }
 
 .information > h2 {
@@ -100,31 +99,80 @@ menu {
     list-style: none;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
 }
 
 menu > li {
-    max-width: 100px;
-    height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 5px;
     margin-bottom: 80px;
+    width: 25%;
 }
 
 menu > li > figure {
     border: 3px solid #3882F6;
     border-radius: 8px;
-    padding: 20px;
-    width: 100px;
+    padding: 40px;
 }
 
 .park-service {
     text-align: center;
 }
 
+/* end of menu items style */
+
+article {
+    background-color: #E5E7EB;
+    padding: 50px 250px;
+}
+
+article > p {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    text-align: justify;
+}
+
+.quote {
+    text-align: right;
+    font-weight: 800;
+}
+
+/* section call */
+
+.call {
+    padding: 60px 180px;
+}
+
+.div-call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3882F6;
+    padding: 30px 70px;
+    border-radius: 8px;
+    color: #E5E7EB;
+}
+
+.action > h4 {
+    color: #F9FAF8;
+
+}
+
+.btn-info {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+}
+
+footer {
+    text-align: center;
+    color: #E5E7EB
+}
 colors {
     color: #F9FAF8;
     color: #E5E7EB;
