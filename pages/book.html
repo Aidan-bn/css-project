@@ -40,9 +40,44 @@
         </div>
     </section>
 
-    <section class="information">
-        <h2>Some random information</h2>
-        
+    <section class="information info-bg">
+        <h2>Plan a trip now!</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Enter Your Particulars</legend>
+                <label for="name">First name:</label>
+                <input type="text" name="first-name" required>
+                <label for="name">Last name:</label>
+                <input type="text" name="last-name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="name">Phone number:</label>
+                <input type="number" name="phone-number" required>
+                <label for="gender">Gender</label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" name="gender">
+                <label for="date">Arrival Date</label>
+                <input type="date" name="date" id="date">
+                <label for="idadi">Quantity</label>
+                <select name="idadi" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="category">Category</label>
+                <select name="selection" id="">
+                    <optgroup label="Family">
+                        <option value="p&c">Parents and children</option>
+                        <option value="p&c">Father and children</option>
+                        <option value="p&c">Mother and children</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <section class="call">

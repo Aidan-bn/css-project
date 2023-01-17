@@ -177,6 +177,34 @@ footer {
     color: #E5E7EB;
     height: 60px;
 }
+
+/* the start of booking page */
+.info-bg {
+    background-image: url("./assets/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+fieldset {
+    padding: 10px ;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+label, input {
+    color: #1F2937;
+    font-size: 17px;
+}
 colors {
     color: #F9FAF8;
     color: #E5E7EB;
