@@ -180,7 +180,7 @@ footer {
 
 /* the start of booking page */
 .info-bg {
-    background-image: url("./assets/images.jpeg");
+    background-image: url("./assets/knjaro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -190,6 +190,16 @@ form {
     width: 50%;
     margin: auto;
     text-align: center;
+}
+
+legend {
+    color: #FFFFFF;
+    background-color: #3882F6;
+    padding: 1px 8px;
+    border-radius: 10px;
+    border: 1px solid #92aee8;
+    text-align: center;
+    font-weight: 600;
 }
 
 fieldset {
@@ -202,8 +212,48 @@ fieldset {
 }
 
 label, input {
-    color: #1F2937;
+    color: #FFFFFF;
     font-size: 17px;
+}
+/* 
+[type = text] {
+    background-color: rgba(250, 252, 252, 0);
+    padding: 4px;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid  #E5E7EB;
+}
+
+[type = email] {
+    background-color: rgba(250, 252, 252, 0);
+    padding: 4px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid  #E5E7EB;
+}
+
+input, date, option, select {
+    background-color: rgba(250, 252, 252, 0);
+    padding: 4px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #E5E7EB;
+} */
+
+.radio {
+    display: flex;
+    padding-top: 5px;
+    gap: 9px;
+    color: #FFFFFF;
+}
+
+input, date, select {
+    background-color: rgba(250, 252, 252, 0);
+    padding: 4px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #E5E7EB;
+    text-align: right;
 }
 colors {
     color: #F9FAF8;
