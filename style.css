@@ -259,6 +259,18 @@ input, date, select {
     border-bottom: 1px solid #E5E7EB;
     text-align: right;
 }
+/* 
+portfolio page */
+
+#video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
 colors {
     color: #F9FAF8;
     color: #E5E7EB;
