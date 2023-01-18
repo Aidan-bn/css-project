@@ -45,20 +45,20 @@
         <form action="#">
             <fieldset>
                 <legend>Enter Your Particulars</legend>
-                <label for="name">First name:</label>
-                <input type="text" name="first-name" required>
-                <label for="name">Last name:</label>
-                <input type="text" name="last-name" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" required>
-                <label for="name">Phone number:</label>
-                <input type="number" name="phone-number" required>
+                <!-- <label for="name">First name:</label> -->
+                <input type="text" name="first-name" placeholder="First name" required>
+                <!-- <label for="name">Last name:</label> -->
+                <input type="text" name="last-name" placeholder="Last name" required>
+                <!-- <label for="email">Email:</label> -->
+                <input type="text" name="email" placeholder="email" required>
+                <!-- <label for="name">Phone number:</label> -->
+                <input type="text" name="phone-number" placeholder="Phone #" required>
                 <div class="radio">
-                    Male: <input type="radio" name="gender">
-                    Female: <input type="radio" name="gender">
+                    <label>Male :</label> <input type="radio" name="gender">
+                    <label>Feale :</label><input type="radio" name="gender">
                 </div>
                 <label for="date">Arrival Date</label>
-                <input type="date" name="date" id="date">
+                <input type="date" name="date" id="date" >
                 <label for="idadi">Quantity</label>
                 <select name="idadi" id="">
                     <option value="...Select"></option>
@@ -80,7 +80,7 @@
                     </optgroup>
                 </select>
             </fieldset>
-            <button type="submit">Submit</button>
+            <a href="./book.html" class=" button">Submit</a>
         </form>
     </section>
 
@@ -93,7 +93,7 @@
                 </p>
             </div>
             <div>
-                <button type="submit" class="btn-info">Sign up</button>
+                <a href="./book.html" class="btn-info button">Sign up</a>
             </div>
         </div>
     </section>

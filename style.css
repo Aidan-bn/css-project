@@ -13,6 +13,38 @@ header {
     margin-bottom: 80px;
 }
 
+.parks > ul {
+    display: flex;
+    list-style: none;
+}
+
+.parks > ul > li {
+    color: #3882F6;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.parks > ul > li:hover {
+    border-bottom: 1px solid #E5E7EB;
+    color: #E5E7EB;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.parks > ul > li:nth-child(2) {
+    border-left: 3px solid #3882F6;
+}
+
+.parks > ul > li:nth-child(3) {
+    border-left: 3px solid #3882F6;
+}
+
+.parks > ul > li:nth-child(4) {
+    border-left: 3px solid #3882F6;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -22,6 +54,7 @@ nav {
 nav > h1 {
     font-size: 24px;
     color: #F9FAF8;
+    text-transform: uppercase;
 }
 
 nav > ul, a {
@@ -58,17 +91,21 @@ aside, .mbuga {
     gap: 5px;
 }
 
-button {
-    padding: 5px;
+.button {
+    padding: 3px 8px;
     display: inline;
     width: 90px;
     border: 0;
     border-radius: 5px;
+    background-color: #F9FAF8;
+    color: #1F2937;
 }
 
-.left > button {
+.left > a {
     color: #E5E7EB;
     background-color: #3882F6;
+    text-align: center;
+    padding: 4px;
 }
 
 .right {
@@ -203,7 +240,7 @@ legend {
 }
 
 fieldset {
-    padding: 10px ;
+    padding: 10px 10px 30px 10;
     line-height: 2rem;
     display: flex;
     flex-direction: column;
@@ -212,52 +249,47 @@ fieldset {
     background-color: #3881f681;
     border-radius: 10px;
     box-shadow: #3882F6;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
 }
 
-label, input {
+label {
     color: #FFFFFF;
     font-size: 17px;
-}
-/* 
-[type = text] {
-    background-color: rgba(250, 252, 252, 0);
-    padding: 4px;
-    outline: 0;
-    border: 0;
-    border-bottom: 2px solid  #E5E7EB;
-}
+} 
 
-[type = email] {
-    background-color: rgba(250, 252, 252, 0);
+ [type="text"] {
+    background-color: #3881f600;
     padding: 4px;
+    margin-bottom: 12px;
     outline: 0;
     border: 0;
     border-bottom: 1px solid  #E5E7EB;
-}
+    color: #F9FAF8;
+    font-size: 17px;
+} 
 
 input, date, option, select {
     background-color: rgba(250, 252, 252, 0);
-    padding: 4px;
     outline: 0;
     border: 0;
+    color: #F9FAF8;
     border-bottom: 1px solid #E5E7EB;
-} */
+} 
 
 .radio {
     display: flex;
+    align-items: center;
     padding-top: 5px;
     gap: 9px;
     color: #FFFFFF;
 }
 
-input, date, select {
+date, select {
     background-color: rgba(250, 252, 252, 0);
     padding: 4px;
     outline: 0;
     border: 0;
     border-bottom: 1px solid #E5E7EB;
-    text-align: right;
+    color: #F9FAF8;
 }
 /* 
 portfolio page */
@@ -291,7 +323,7 @@ portfolio page */
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 175px;
+    gap: 150px;
 }
 
 .quote-content > h5 {
@@ -302,6 +334,7 @@ portfolio page */
 .quote-div{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: baseline;
 }
 
