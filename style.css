@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer, .hero {
+    padding: 10px 180px;
+    background: #1F2937;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > h1 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+nav > ul, a {
+    color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.hero-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside > h2 {
+    color: #F9FAF8;
+    font-size: 48px;
+}
+
+aside, .mbuga {
+    font-size: 18px;
+    color: #E5E7EB;
+    width: 50%;
+    margin-bottom: 60px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    padding: 5px;
+    display: inline;
+    width: 90px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.left > button {
+    color: #E5E7EB;
+    background-color: #3882F6;
+}
+
+.right {
+    background-image: url("./assets/serengeti.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-mbuga {
+    width: 100%;
+    max-height: 212px;
+}
+
+/* end of hero section */
+.information {
+    padding: 20px 250px;
+}
+
+.information > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+menu {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+menu > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 80px;
+    width: 25%;
+}
+
+menu > li > figure {
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.park-service {
+    text-align: center;
+}
+
+/* end of menu items style */
+
+article {
+    background-color: #E5E7EB;
+    padding: 50px 250px;
+}
+
+article > p {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    text-align: justify;
+}
+
+.quote {
+    text-align: right;
+    font-weight: 800;
+}
+
+/* section call */
+
+.call {
+    padding: 60px 180px;
+}
+
+.div-call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3882F6;
+    padding: 30px 70px;
+    border-radius: 8px;
+    color: #E5E7EB;
+}
+
+.action > h4 {
+    color: #F9FAF8;
+
+}
+
+.btn-info {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E5E7EB;
+    height: 60px;
+}
+colors {
+    color: #F9FAF8;
+    color: #E5E7EB;
+    color: #3882F6;
+    color: #1F2937;
+    color: #1F2937;
+}
