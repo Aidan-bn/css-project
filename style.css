@@ -1,10 +1,33 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('Roboto/Roboto-Light.ttf') format("truetype");
+    src: url('Roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url('Roboto/Roboto-LightItalic.ttf') format("truetype");
+} 
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('Roboto/Roboto-Bold.ttf') format("truetype");
+} 
+
+@font-face {
+    font-family: 'Roboto-bolder';
+    src: url('Roboto/Roboto-Black.ttf') format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 footer, .hero {
+    font-family: "Roboto";
     padding: 10px 180px;
     background: #1F2937;
 }
@@ -55,6 +78,7 @@ nav > h1 {
     font-size: 24px;
     color: #F9FAF8;
     text-transform: uppercase;
+    font-family: "Roboto-bold";
 }
 
 nav > ul, a {
@@ -76,6 +100,7 @@ nav > ul, a {
 aside > h2 {
     color: #F9FAF8;
     font-size: 48px;
+    font-family: "Roboto-bolder", sans-serif;
 }
 
 aside, .mbuga {
@@ -131,6 +156,7 @@ aside, .mbuga {
 .information > h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-family: "Roboto-bold";
 }
 
 menu {
@@ -173,11 +199,14 @@ article > p {
     color: #1F2937;
     font-style: italic;
     text-align: justify;
+    font-family: "Roboto-thin", sans-serif;
 }
 
 .quote {
     text-align: right;
-    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
 }
 
 /* section call */
@@ -327,8 +356,9 @@ portfolio page */
 }
 
 .quote-content > h5 {
-    font-size: 75px;
+    font-size: 70px;
     color: #E5E7EB;
+    font-family: "Roboto-bolder", sans-serif;
 }
 
 .quote-div{
