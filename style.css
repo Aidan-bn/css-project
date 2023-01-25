@@ -23,10 +23,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 footer, .hero {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto';
     padding: 10px 180px;
     background: #1F2937;
 }
@@ -99,7 +100,7 @@ nav > ul, a {
 aside > h2 {
     color: #F9FAF8;
     font-size: 48px;
-    font-family: "Roboto-bolder", sans-serif;
+    font-family: "Roboto-bolder";
 }
 
 aside, .mbuga {
@@ -197,12 +198,12 @@ article > p {
     color: #1F2937;
     font-style: italic;
     text-align: justify;
-    font-family: "Roboto-thin", sans-serif;
+    font-family: "Roboto-thin";
 }
 
 .quote {
     text-align: right;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
 }
@@ -354,7 +355,7 @@ date, select {
 .quote-content > h5 {
     font-size: 70px;
     color: #E5E7EB;
-    font-family: "Roboto-bolder", sans-serif;
+    font-family: "Roboto-bolder";
 }
 
 .quote-div{
