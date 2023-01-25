@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: "Roboto";
     src: url('Roboto/Roboto-Light.ttf') format("truetype");
     src: url('Roboto/Roboto-Regular.ttf') format("truetype");
@@ -17,7 +17,7 @@
 @font-face {
     font-family: 'Roboto-bolder';
     src: url('Roboto/Roboto-Black.ttf') format("truetype");
-} */
+}
 
 * {
     margin: 0;
@@ -173,13 +173,13 @@ menu > li {
     justify-content: center;
     gap: 5px;
     margin-bottom: 80px;
-    width: 25%;
+    width: 140px;
 }
 
 menu > li > figure {
     border: 3px solid #3882F6;
     border-radius: 8px;
-    padding: 16px;
+    padding: 40px;
 }
 
 .park-service {
