@@ -1,16 +1,71 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('Roboto/Roboto-Light.ttf') format("truetype");
+    src: url('Roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url('Roboto/Roboto-LightItalic.ttf') format("truetype");
+} 
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('Roboto/Roboto-Bold.ttf') format("truetype");
+} 
+
+@font-face {
+    font-family: 'Roboto-bolder';
+    src: url('Roboto/Roboto-Black.ttf') format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 footer, .hero {
+    font-family: "Roboto";
     padding: 10px 180px;
     background: #1F2937;
 }
 
 header {
     margin-bottom: 80px;
+}
+
+.parks > ul {
+    display: flex;
+    list-style: none;
+}
+
+.parks > ul > li {
+    color: #3882F6;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.parks > ul > li:hover {
+    border-bottom: 1px solid #E5E7EB;
+    color: #E5E7EB;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.parks > ul > li:nth-child(2) {
+    border-left: 3px solid #3882F6;
+}
+
+.parks > ul > li:nth-child(3) {
+    border-left: 3px solid #3882F6;
+}
+
+.parks > ul > li:nth-child(4) {
+    border-left: 3px solid #3882F6;
 }
 
 nav {
@@ -22,6 +77,8 @@ nav {
 nav > h1 {
     font-size: 24px;
     color: #F9FAF8;
+    text-transform: uppercase;
+    font-family: "Roboto-bold";
 }
 
 nav > ul, a {
@@ -43,6 +100,7 @@ nav > ul, a {
 aside > h2 {
     color: #F9FAF8;
     font-size: 48px;
+    font-family: "Roboto-bolder", sans-serif;
 }
 
 aside, .mbuga {
@@ -58,17 +116,21 @@ aside, .mbuga {
     gap: 5px;
 }
 
-button {
-    padding: 5px;
+.button {
+    padding: 3px 8px;
     display: inline;
     width: 90px;
     border: 0;
     border-radius: 5px;
+    background-color: #F9FAF8;
+    color: #1F2937;
 }
 
-.left > button {
+.left > a {
     color: #E5E7EB;
     background-color: #3882F6;
+    text-align: center;
+    padding: 4px;
 }
 
 .right {
@@ -94,6 +156,7 @@ button {
 .information > h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-family: "Roboto-bold";
 }
 
 menu {
@@ -125,7 +188,6 @@ menu > li > figure {
 }
 
 /* end of menu items style */
-
 article {
     background-color: #E5E7EB;
     padding: 50px 250px;
@@ -136,15 +198,17 @@ article > p {
     color: #1F2937;
     font-style: italic;
     text-align: justify;
+    font-family: "Roboto-thin", sans-serif;
 }
 
 .quote {
     text-align: right;
-    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
 }
 
 /* section call */
-
 .call {
     padding: 60px 180px;
 }
@@ -203,7 +267,7 @@ legend {
 }
 
 fieldset {
-    padding: 10px ;
+    padding: 10px 10px 30px 10;
     line-height: 2rem;
     display: flex;
     flex-direction: column;
@@ -212,54 +276,198 @@ fieldset {
     background-color: #3881f681;
     border-radius: 10px;
     box-shadow: #3882F6;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
 }
 
-label, input {
+label {
     color: #FFFFFF;
     font-size: 17px;
-}
-/* 
-[type = text] {
-    background-color: rgba(250, 252, 252, 0);
-    padding: 4px;
-    outline: 0;
-    border: 0;
-    border-bottom: 2px solid  #E5E7EB;
-}
+} 
 
-[type = email] {
-    background-color: rgba(250, 252, 252, 0);
+ [type="text"] {
+    background-color: #3881f600;
     padding: 4px;
+    margin-bottom: 12px;
     outline: 0;
     border: 0;
     border-bottom: 1px solid  #E5E7EB;
-}
+    color: #F9FAF8;
+    font-size: 17px;
+} 
 
 input, date, option, select {
     background-color: rgba(250, 252, 252, 0);
-    padding: 4px;
     outline: 0;
     border: 0;
+    color: #F9FAF8;
     border-bottom: 1px solid #E5E7EB;
-} */
+} 
 
 .radio {
     display: flex;
+    align-items: center;
     padding-top: 5px;
     gap: 9px;
     color: #FFFFFF;
 }
 
-input, date, select {
+date, select {
     background-color: rgba(250, 252, 252, 0);
     padding: 4px;
     outline: 0;
     border: 0;
     border-bottom: 1px solid #E5E7EB;
-    text-align: right;
+    color: #F9FAF8;
 }
-colors {
+
+/* portfolio page */
+#video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.parks > h4 {
+    color: #3882F6;
+    text-align: center;
+    font-size: 30px;
+}
+
+.portfolio {
+    padding: 40px 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 150px;
+}
+
+.quote-content > h5 {
+    font-size: 70px;
+    color: #E5E7EB;
+    font-family: "Roboto-bolder", sans-serif;
+}
+
+.quote-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+}
+
+q {
+    font-size: 18px;
+    font-style: oblique;
+    color: #E5E7EB;
+}
+
+.quote-div > a {
+    background-color: #3882F6;
+    padding: 6px 15px;
+}
+
+.park-list {
+    width: 50%;
+    height: 390px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.card {
+    margin: 10px 0;
+    width: 48%;
+    height: 174px;
+    background-color: #3881f638;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.card-content {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 5px;
+}
+
+.card-content {
+    content: 'Welcome';
+    color: #E5E7EB;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3881f6f2;
+    transition: 5s ease-in-out;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-content > img {
+    content: 'View ';
+    position: absolute; 
+    height: 20%; 
+    width: 20%;
+    left: 40%;
+    bottom: 22%;
+    border-radius: 8px;
+}
+
+.card-content > h6 {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #E5E7EB;
+}
+
+.card-content > img:hover {
+    height: 100%; 
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.summary {
+    color: #3882F6;
+    padding: 3px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+keys {
     color: #F9FAF8;
     color: #E5E7EB;
     color: #3882F6;
