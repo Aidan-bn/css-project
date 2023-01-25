@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     src: url('Roboto/Roboto-Regular.ttf') format("truetype");
 }
 
@@ -165,6 +165,7 @@ menu {
     align-items: flex-start;
     justify-content: space-between;
     gap: 10px;
+    border: 2px solid;
 }
 
 menu > li {
@@ -174,13 +175,13 @@ menu > li {
     justify-content: center;
     gap: 5px;
     margin-bottom: 80px;
-    width: 140px;
+    width: 20%; 
 }
 
 menu > li > figure {
     border: 3px solid #3882F6;
     border-radius: 8px;
-    padding: 40px;
+    padding: 7px; 
 }
 
 .park-service {
@@ -349,11 +350,12 @@ date, select {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 100px;
+    gap: 48px;
+    border: 2px solid;
 }
 
 .quote-content > h5 {
-    font-size: 70px;
+    font-size: 68px;
     color: #E5E7EB;
     font-family: "Roboto-bolder";
 }
@@ -465,12 +467,4 @@ q {
     padding: 3px 4px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-keys {
-    color: #F9FAF8;
-    color: #E5E7EB;
-    color: #3882F6;
-    color: #1F2937;
-    color: #1F2937;
 }
