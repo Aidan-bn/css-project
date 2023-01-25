@@ -460,6 +460,13 @@ q {
     top: 0;
 }
 
+.summary {
+    color: #3882F6;
+    padding: 3px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 keys {
     color: #F9FAF8;
     color: #E5E7EB;
