@@ -165,7 +165,6 @@ menu {
     align-items: flex-start;
     justify-content: space-between;
     gap: 10px;
-    border: 2px solid;
 }
 
 menu > li {
