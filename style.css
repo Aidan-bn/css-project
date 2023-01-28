@@ -95,8 +95,8 @@ nav > ul, a {
 }
 
 .hero-div {
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -339,7 +339,7 @@ date, select {
 }
 
 .portfolio {
-    padding: 40px 180px;
+    padding: 30px 180px;
     display: flex;
     align-items: center;
     justify-content: space-between;
